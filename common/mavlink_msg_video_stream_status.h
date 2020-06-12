@@ -1,7 +1,7 @@
 #pragma once
 // MESSAGE VIDEO_STREAM_STATUS PACKING
 
-#define MAVLINK_MSG_ID_VIDEO_STREAM_STATUS 270
+#define MAVLINK_MSG_ID_VIDEO_STREAM_STATUS 271
 
 MAVPACKED(
 typedef struct __mavlink_video_stream_status_t {
@@ -17,17 +17,17 @@ typedef struct __mavlink_video_stream_status_t {
 
 #define MAVLINK_MSG_ID_VIDEO_STREAM_STATUS_LEN 19
 #define MAVLINK_MSG_ID_VIDEO_STREAM_STATUS_MIN_LEN 19
-#define MAVLINK_MSG_ID_270_LEN 19
-#define MAVLINK_MSG_ID_270_MIN_LEN 19
+#define MAVLINK_MSG_ID_271_LEN 19
+#define MAVLINK_MSG_ID_271_MIN_LEN 19
 
 #define MAVLINK_MSG_ID_VIDEO_STREAM_STATUS_CRC 59
-#define MAVLINK_MSG_ID_270_CRC 59
+#define MAVLINK_MSG_ID_271_CRC 59
 
 
 
 #if MAVLINK_COMMAND_24BIT
 #define MAVLINK_MESSAGE_INFO_VIDEO_STREAM_STATUS { \
-    270, \
+    271, \
     "VIDEO_STREAM_STATUS", \
     8, \
     {  { "stream_id", NULL, MAVLINK_TYPE_UINT8_T, 0, 18, offsetof(mavlink_video_stream_status_t, stream_id) }, \
