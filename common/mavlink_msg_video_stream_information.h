@@ -3,7 +3,7 @@
 
 #define MAVLINK_MSG_ID_VIDEO_STREAM_INFORMATION 269
 
-MAVPACKED(
+
 typedef struct __mavlink_video_stream_information_t {
  float framerate; /*< [Hz] Frames per second*/
  uint32_t bitrate; /*< [b/s] Bit rate in bits per second*/
@@ -13,7 +13,7 @@ typedef struct __mavlink_video_stream_information_t {
  uint8_t camera_id; /*<  Camera ID (1 for first, 2 for second, etc.)*/
  uint8_t status; /*<  Current status of video streaming (0: not running, 1: in progress)*/
  char uri[230]; /*<  Video stream URI*/
-}) mavlink_video_stream_information_t;
+} mavlink_video_stream_information_t;
 
 #define MAVLINK_MSG_ID_VIDEO_STREAM_INFORMATION_LEN 246
 #define MAVLINK_MSG_ID_VIDEO_STREAM_INFORMATION_MIN_LEN 246

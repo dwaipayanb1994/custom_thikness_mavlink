@@ -3,7 +3,7 @@
 
 #define MAVLINK_MSG_ID_SET_VIDEO_STREAM_SETTINGS 270
 
-MAVPACKED(
+
 typedef struct __mavlink_set_video_stream_settings_t {
  float framerate; /*< [Hz] Frames per second (set to -1 for highest framerate possible)*/
  uint32_t bitrate; /*< [b/s] Bit rate in bits per second (set to -1 for auto)*/
@@ -14,7 +14,7 @@ typedef struct __mavlink_set_video_stream_settings_t {
  uint8_t target_component; /*<  component ID of the target*/
  uint8_t camera_id; /*<  Camera ID (1 for first, 2 for second, etc.)*/
  char uri[230]; /*<  Video stream URI*/
-}) mavlink_set_video_stream_settings_t;
+} mavlink_set_video_stream_settings_t;
 
 #define MAVLINK_MSG_ID_SET_VIDEO_STREAM_SETTINGS_LEN 247
 #define MAVLINK_MSG_ID_SET_VIDEO_STREAM_SETTINGS_MIN_LEN 247
