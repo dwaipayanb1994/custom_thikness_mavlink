@@ -1589,5 +1589,9 @@
       <field type="uint16_t[4]" name="rpm" units="rpm">RPM (eRPM).</field>
       <field type="uint16_t[4]" name="count">count of telemetry packets received (wraps at 65535).</field>
     </message>
+    <message id="11045" name = "THICKNESS_GAUGE_READING">
+      <description>Definition of range thickness in 0 to 1000</description>
+      <field type="float" name="thickness" units="mm">Thickness measured by gauge.</field>
+    </message>
   </messages>
 </mavlink>
